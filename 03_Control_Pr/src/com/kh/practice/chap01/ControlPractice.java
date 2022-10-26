@@ -127,7 +127,7 @@ public class ControlPractice {
 		// Pw = "myPassword12";
 		
 		if (id.equals("myId")) {
-			if (pw.equals("myPassword")) {
+			if (pw.equals("myPassword12")) {
 				System.out.println("로그인 성공");
 			}else {
 				System.out.println("비밀번호가 틀렸습니다.");
@@ -135,6 +135,26 @@ public class ControlPractice {
 		}else {
 			System.out.println("아이디가 틀렸습니다.");
 		}
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+
+		Stirng userId = "myID";
+		String userPwd = "myPassword12";
+		
+		System.out.print("아이디 : ");
+		String id = sc.nextLine();
+		System.out.print("비밀번호 : ");
+		String pwd = sc.nextLine();
+		
+		if(id.equals(userId) && pwd.equals(userPwd)) {
+			System.out.println("로그인 성공");
+		}else if(id.equals(userId)) && !(pwd.equals(userPwd))) {
+			System.out.println("비밀번호 틀렸습니다.");
+		}else if(!(id.equals(userId)) && pwd.equals(userPwd)) {
+			System.out.println("아이디가 틀렸습니다.");
+		}
+		*/
 	}
 	
 	public void practice6() {
@@ -209,6 +229,23 @@ public class ControlPractice {
 			System.out.print("잘못 입력하셨습니다. 프로그램을 종료합니다.");
 		}
 	
+	/*
+	 * int = result = 0;
+	 * 
+	 * if((num1 > 0) && (num2 > 0)) {
+	 * 	switch(airth) {
+	 * 	case '+' : result = (num1 + num2); break;
+	 *  case '+' : result = (num1 + num2); break;
+	 *  case '+' : result = (num1 + num2); break;
+	 *  case '+' : result = (num1 + num2); break;
+	 *  case '+' : result = (num1 + num2); break;
+	 *  }
+	 *  system.out.printf("%d %c %d = %d\n", num1, op, num2, result)
+	 *  }else {
+	 *  System.out.println("잘못 입력하셨습니다.");
+	 * 
+	 */
+	
 	public void practice9() {
 		
 		Scanner sc = new Scanner(System.in);
@@ -229,6 +266,7 @@ public class ControlPractice {
 		double total = midScore + finalScore + homeworkScore + attend;
 		
 		if (attend <= 14) {
+			System.out.println("========== 결과 ==========");
 			System.out.println("Fail [출석 회수 부족 (10/20)]");
 			return;
 		} else if (total >= 70) {
@@ -250,6 +288,45 @@ public class ControlPractice {
 			System.out.println("Fail [점수 미달]");
 		
 	}
+	
+	public void practice9_1() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("중간 고사 점수 : ");
+		double mScore = sc.nextDouble();
+		System.out.print("기말 고사 점수 : ");
+		double fScore = sc.nextDouble();
+		System.out.print("과제 점수 : ");
+		double hScore = sc.nextDouble();
+		System.out.print("출석 점수 : ");
+		double aScore = sc.nextDouble();
+		
+		if (aScore <= 14) {
+			System.out.println("========== 결과 ==========");
+			System.out.println("Fail [출석 횟수 부족 (" + (int)aScore + "/20) ]");
+			return;
+		}
+		System.out.println("========== 결과 ==========");
+		System.out.println("중간 고사 점수(20) : " + (mScore = mScore *0.2));
+		System.out.println("중간 고사 점수(30) : " + (fScore = fScore *0.2));
+		System.out.println("과제 점수(30) : " + (hScore = hScore *0.2));
+		System.out.println("출석 점수(20) : " + fScore );
+		
+		double sumScore = mScore + fScore + hScore + aScore;
+		
+		System.out.println("총점 : " + sumScore);
+		
+		if(aScore > 14 ) {
+			if(sumScore >= 70 ) {
+				System.out.println("PASS");
+			}else {
+				System.out.println("Fail [점수미달]");
+			}
+		}
+		
+		
+	}
+	
 	
 	public void practice10() {
 		
@@ -302,5 +379,28 @@ public class ControlPractice {
 		}
 		
 	}
+	
+	/*
+	switch(choose) {
+	case 1 :
+		practice1(); break;
+	case 2 :
+		practice2(); break;
+	case 3 :
+		practice3(); break;
+	case 4 :
+		practice4(); break;
+	case 5 :
+		practice5(); break;
+	case 6 :
+		practice6(); break;
+	case 7 :
+		practice7(); break;
+	case 8 :
+		practice8(); break;
+	case 9 :
+		practice9(); break;
+	}
+	*/
 	
 }
