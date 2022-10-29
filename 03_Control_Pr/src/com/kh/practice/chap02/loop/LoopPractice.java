@@ -99,11 +99,14 @@ public class LoopPractice {
 		
 		int sum = 0;
 		
-		for (int i = 1 ; i < num+1 ; i++) {
-			sum += i;
+		for (int i = 1 ; i <= num ; i++) {
+				System.out.print(i);
+				sum += i;
+			}
+			System.out.println("= " + sum);
 		}
-		///***일단보류
-	}
+		///★★★★★★★★★보류
+	
 	
 	public void practice6() {
 		//사용자로부터 두 개의 값을 입력 받아 그 사이의 숫자를 모두 출력하세요.
@@ -127,7 +130,7 @@ public class LoopPractice {
 		}
 
 		
-		// ***일단보류;;
+		//★★★★★★★★★보류
 		
 		
 	}
@@ -138,7 +141,7 @@ public class LoopPractice {
 		
 		
 		
-		
+		//★★★★★★★★★보류
 	}
 	
 	public void practice8() {
@@ -231,6 +234,8 @@ public class LoopPractice {
 		
 	}
 	
+	////★★★★★★★★★보류
+	
 	public void practice13() {
 		
 		Scanner sc = new Scanner(System.in);
@@ -238,14 +243,37 @@ public class LoopPractice {
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
 		
-		for (int i = 1 ; i <= 5 ; i++) {
-			System.out.println("*");
+		for (int i = 1 ; i <= num ; i++) {
+			for (int j = 1 ; j <= i ; j++ ) {
+				System.out.print("*");
+			}
+			System.out.println(" ");
 		}
 		
 		
 	}
 	
+	public void practice14() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		
+		for (int i = num ; i >= 1 ; i--) {
+			for (int j = i ; j >= 1 ; j-- ) {
+				System.out.print("*");
+			}
+			System.out.println(" ");
+		}
+		
+	}
+		
+		
+		
+	
 	
 	
 	
 }
+

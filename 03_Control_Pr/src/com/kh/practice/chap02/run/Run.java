@@ -13,7 +13,7 @@ public class Run {
 		//lp.practice2();
 		//lp.practice3();
 		//lp.practice4();
-		//lp.practice5();
+		lp.practice5();
 		//lp.practice6();
 		//lp.practice7();
 		//lp.practice8();
@@ -21,7 +21,7 @@ public class Run {
 		//lp.practice10();
 		//lp.practice11();
 		//lp.practice12();
-		lp.practice13();
+		//lp.practice13();
 		//lp.practice14();
 		
 		
