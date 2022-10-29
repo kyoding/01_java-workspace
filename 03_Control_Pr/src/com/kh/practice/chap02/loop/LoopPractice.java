@@ -146,11 +146,13 @@ public class LoopPractice {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("숫자 : ");
+		System.out.print("숫자 : ");
+		int dan = sc.nextInt();
 		
-		
-		
-		
+		System.out.println("===== " + dan + "단 =====");
+		for (int i = 1 ; i < 10 ; i++) {
+			System.out.printf("%d * %d = %d\n", dan, i, dan*i);
+		}
 		
 	}
 	
@@ -158,16 +160,48 @@ public class LoopPractice {
 		//사용자로부터 입력 받은 숫자의 단부터 9단까지 출력하세요.
 		//단, 9를 초과하는 숫자가 들어오면 “9 이하의 숫자만 입력해주세요”를 출력하세요.
 		
-	}
+		Scanner sc = new Scanner(System.in);
+		
+		//숫자입력받기
+		System.out.print("숫자 : ");
+		int dan = sc.nextInt();
+		
+		if (dan < 10) {
+			for (int i = dan ; i < 10 ; i++) {
+				System.out.println("===== " + i + "단 =====");
+				for (int j = 1 ; j < 10 ; j++) {
+					System.out.printf("%d * %d = %d\n", i, j, i*j);
+				}
+			}
+		} else {
+			System.out.println("9 이하의 숫자만 입력해주세요");
+		}
+		}
 	
 	public void practice10() {
 		//위 문제와 모든 것이 동일하나, 9를 초과하는 숫자가 입력됐다면
 		//“9 이하의 숫자를 입력해주세요”가 출력되면서 다시 사용자가 값을 입력하도록 하세요.
 		
-		
+		Scanner sc = new Scanner(System.in);
+
+		while (true) {
+			System.out.print("숫자 : ");
+			int dan = sc.nextInt();
+			if (dan < 10) {
+				for (int i = dan; i < 10; i++) {
+					System.out.println("===== " + i + "단 =====");
+					for (int j = 1; j < 10; j++) {
+						System.out.printf("%d * %d = %d\n", i, j, i * j);
+					}
+				}
+				break;
+			} else {
+				System.out.println("9 이하의 숫자만 입력해주세요");
+			}
+		}
 	}
 	
-	public void practice11(){}
+	public void practice11() {
 	//사용자로부터 시작 숫자와 공차를 입력 받아
 	//일정한 값으로 숫자가 커지거나 작아지는 프로그램을 구현하세요.
 	//단, 출력되는 숫자는 총 10개입니다.
@@ -178,6 +212,38 @@ public class LoopPractice {
 	//시작 숫자 : 4
 	//공차 : 3
 	//4 7 10 13 16 19 22 25 28 31
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("시작 숫자 : ");
+		int startNum = sc.nextInt();
+		System.out.print("공차 : ");
+		int difference = sc.nextInt();
+		
+		for (int i = 0 ; i < 10 ; i++) {
+			for (int j = 0 ; j < 10 ; j++) {
+				System.out.print(startNum + (difference * j) + " ");
+			}
+			break;
+		}
+	}
+	
+	public void practice12() {
+		
+	}
+	
+	public void practice13() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		
+		for (int i = 1 ; i <= 5 ; i++) {
+			System.out.println("*");
+		}
+		
+		
+	}
 	
 	
 	
