@@ -180,5 +180,27 @@ public class ArrayPractice {
 		
 	}
 	
-	
+	public void practice9() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("치킨 이름을 입력하세요 : ");
+		String str = sc.nextLine();
+
+		String[] chicken = { "양념", "후라이드", "간장", "마늘" };
+
+		int possible = 0;
+
+		for (int i = 0; i < chicken.length; i++) {
+			if (str.equals(chicken[i]))
+				possible++;
+		}
+
+		if (possible >= 1) {
+			System.out.println(str + "치킨 배달 가능");
+		} else {
+			System.out.println(str + "치킨은 없는 메뉴입니다.");
+		}
+
+	}
 }

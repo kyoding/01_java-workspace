@@ -17,7 +17,8 @@ public class Run {
 		//ap.practice5();
 		//ap.practice6();
 		//ap.practice7();
-		ap.practice8();
+		//ap.practice8();
+		ap.practice9();
 		
 		//ArrayPracticePr app = new ArrayPracticePr();
 		
