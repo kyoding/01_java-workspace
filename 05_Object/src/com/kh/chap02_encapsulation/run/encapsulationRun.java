@@ -54,6 +54,26 @@ public class encapsulationRun {
 		System.out.println(woo.getAge());
 		
 		
+		/// ==== 생성자 Student ====
+		
+		System.out.println();
+		System.out.println("==================");
+		
+		// 기본
+		Student s = new Student();
+		System.out.println(s.information());
+		
+		// 이름 키 국어
+		Student s1 = new Student("김땡땡", 180.5, 80);
+		System.out.println(s1.information());
+		
+		// 전체
+		Student s2 = new Student("김땡땡", 20, 180.5, 80, 90);
+		
+		System.out.println(s2.information());
+		
+		
+		
 	}
 
 }

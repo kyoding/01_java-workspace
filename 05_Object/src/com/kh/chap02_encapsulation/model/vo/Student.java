@@ -12,6 +12,36 @@ public class Student { //나만의 자료형
 	
 	// 생성부 선언
 	
+	
+	// ==== 생성부~~
+	
+	// 생성자 - 기본
+	
+	public Student() {
+		System.out.println("Student 객체가 생성되었습니다.");
+	}
+	
+	// 생성자 - 이름, 키, 국어점수
+	
+	public Student(String name, double height, int korScore) {
+		this.name = name;
+		this.height = height;
+		this.korScore = korScore;
+	}
+	
+	// 생성자 - 전체필드
+	
+	public Student(String name, int age, double height, int korScore, int mathScore) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.korScore = korScore;
+		this.mathScore = mathScore;
+	}
+	
+	
+	
+	
 	// 메소드부 선언
 	
 	/*
@@ -90,7 +120,13 @@ public class Student { //나만의 자료형
 	}
 	
 	
+	// 인포메이션
+	
+	public String information() {
+		return "name : " + name + ", age : " + age + ", height : " + height + ", korScore : " + korScore + ", mathScore : " + mathScore;
+	}
 	
 	
 
 }
+

@@ -11,6 +11,33 @@ public class Person {
 	private char gender;
 	private String phone;
 	private String email;
+	
+	// 생성자 - 기본
+	
+	public Person() {
+		System.out.println("Person 객체가 생성되었습니다.");
+	}
+	
+	// 생성자 - 이름 비번 나이 폰번호
+	
+	public Person(String name, String pwd, int age, String phone) {
+		this.name = name;
+		this.pwd = pwd;
+		this.age = age;
+		this.phone = phone;
+	}
+	
+	// 생성자 - 전체 (id, pwd, name, age, gender, phone, email)
+	
+	public Person(String id, String pwd, String name, int age, char gender, String phone, String email) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.phone = phone;
+		this.email = email;
+	}
 
 	// setter 만들기!!
 
@@ -70,6 +97,12 @@ public class Person {
 
 	public String getEmail() {
 		return email;
+	}
+	
+	// 한번에 리턴받는 메소드 생성하기
+	
+	public String information() {
+		return "id : " + id + " pwd : " + pwd + " name : " + name + " age : " + age + " gender : " + gender + " phone : " + phone + " email : " + email;
 	}
 
 }
