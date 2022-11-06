@@ -23,7 +23,7 @@ public class ClassRun {
 		p.setName("정민교");
 		p.setAge(28);
 		p.setGender('M');
-		p.setPhone("010-7350-7926");
+		p.setPhone("010-1234-5678");
 		p.setEmail("minkyo0816@gmail.com");
 		
 		System.out.println("아이디 : " + p.getId());

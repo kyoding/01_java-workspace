@@ -30,14 +30,6 @@ public class Product {
 	 *  }
 	 */
 	
-
-	
-	
-	
-	
-	
-	
-	
 	
 	/*
 	 *  * 메소드부
