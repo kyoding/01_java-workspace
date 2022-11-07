@@ -13,6 +13,8 @@ public class Student { //나만의 자료형
 	// 생성부 선언
 	
 	
+	
+	
 	// ==== 생성부~~
 	
 	// 생성자 - 기본
@@ -31,11 +33,21 @@ public class Student { //나만의 자료형
 	
 	// 생성자 - 전체필드
 	
+	/*
 	public Student(String name, int age, double height, int korScore, int mathScore) {
 		this.name = name;
 		this.age = age;
 		this.height = height;
 		this.korScore = korScore;
+		this.mathScore = mathScore;
+	}
+	*/
+	
+	// 생성자 this활용해서
+	
+	public Student(String name, int age, double height, int korScore, int mathScore) {
+		this(name, height, korScore);
+		this.age = age;
 		this.mathScore = mathScore;
 	}
 	
