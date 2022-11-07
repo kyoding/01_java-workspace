@@ -69,14 +69,7 @@ public class Product {
 	// 인포메이션2
 	
 	public String information2() {
-		return "상품명 : " + productName ;
-	}
-	
-	
-	// 인포메이션3
-	
-	public String information3() {
-		return "부가세 포함 가격 : " + (int)(price + (price * tax));
+		return "상품명 : " + productName + "\n" + "부가세 포함 가격 : " + (int)(price + (price * tax));
 	}
 	
 	

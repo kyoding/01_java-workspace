@@ -46,11 +46,8 @@ public class ProductTest {
 		// ** 실제가격 = 가격 + (가격 * 부가세율)
 		
 		System.out.println(p1.information2());
-		System.out.println(p1.information3());
 		System.out.println(p2.information2());
-		System.out.println(p2.information3());
 		System.out.println(p3.information2());
-		System.out.println(p3.information3());
 	}
 
 }
