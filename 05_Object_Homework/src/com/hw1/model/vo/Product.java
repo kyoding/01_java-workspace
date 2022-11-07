@@ -50,7 +50,7 @@ public class Product {
 		return price;
 	}
 	public void setPrice(int price) {
-		this.price = price;
+		this.price = price; 
 	}
 	
 	public double getTax() {
