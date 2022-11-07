@@ -3,6 +3,7 @@ package com.kh.chap06_method.run;
 import java.util.Scanner;
 
 import com.kh.chap06_method.controller.NonStaticMethod;
+import com.kh.chap06_method.controller.OverloadingTest;
 import com.kh.chap06_method.controller.StaticMethod;
 
 public class MethodRun {
@@ -71,8 +72,19 @@ public class MethodRun {
 		
 		System.out.println(StaticMethod.method4("kiwi", "kiwi"));
 		
+		// ----- OverloadingTest -----
 		
+		OverloadingTest ot = new OverloadingTest();
+		ot.test();
+		ot.test(10);
+		ot.test(10, "     ");
+		ot.test("     ", 10);
+		ot.test("ㅇㅇㅇ");
 		
+		//오버로딩의 대표적인 예 => print()
+		System.out.println(10);
+		System.out.println("ㄴㄴ");
+		System.out.println(0.0);
 		
 	}
 
