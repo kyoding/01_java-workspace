@@ -13,11 +13,10 @@ public class Employee {
 	private String phone;
 	private String address;
 	
-	///
-	
+	// 기본 생성자
 	public Employee () {}
 	
-	
+	// 6개짜리
 	public Employee(int empNo, String empName, int age, char gender, String phone, String address) {
 		this.empNo = empNo;
 		this.empName = empName;
@@ -27,6 +26,7 @@ public class Employee {
 		this.address = address;
 	}
 	
+	// 전체 생성자
 	public Employee(int empNo, String empName, String dept, String job, int age, char gender, int salary,
 			double bonusPoint, String phone, String address) {
 		
@@ -101,7 +101,7 @@ public class Employee {
 
 
 	public String information() {
-		return "emp["  + "] : " + empNo + ", " + empName + ", " + dept + ", " + job + ", " + age + ", " + gender + ", " + salary + ", " + bonusPoint + ", " + phone + ", " + address;
+		return empNo + ", " + empName + ", " + dept + ", " + job + ", " + age + ", " + gender + ", " + salary + ", " + bonusPoint + ", " + phone + ", " + address;
 	}
 	
 	//
