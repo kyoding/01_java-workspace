@@ -1,7 +1,8 @@
 package com.hw1.model.vo;
 
-public class Product {
+public class Product { // 클래스시작
 
+	//== 필드부
 	//필드선언 private
 	
 	private String productId; // 상품아이디
@@ -23,6 +24,7 @@ public class Product {
 		this.tax = tax;
 	}
 	
+	// == 메소드부
 	//getter setter
 	
 	public String getProductId() {
@@ -73,4 +75,4 @@ public class Product {
 	}
 	
 	
-}
+} // 클래스 끝

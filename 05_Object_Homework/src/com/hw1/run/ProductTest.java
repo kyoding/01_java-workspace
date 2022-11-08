@@ -48,6 +48,12 @@ public class ProductTest {
 		System.out.println(p1.information2());
 		System.out.println(p2.information2());
 		System.out.println(p3.information2());
+		
+		// 인포메이션2 주어지지 않았으니 메인에서 직접출력
+		//System.out.println("상품명 : " + p1.getProductName());
+		// 금액바꾸기
+		//p1.setPrice(p1.getPrice() + (int)(p1.getPrice() * p1.getTax()));
+		//System.out.println("부가세 포함 가격 : " + p1.getPrice() + "원");
 	}
 
 }
