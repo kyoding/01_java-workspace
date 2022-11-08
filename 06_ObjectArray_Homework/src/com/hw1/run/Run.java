@@ -65,7 +65,7 @@ public class Run {
 
 		// 보너스가 적용된 연봉 = (급여 +(급여 *보너스 포인트)) * 12
 		
-		System.out.println((emp[0].getSalary() + ((emp[0].getSalary() * emp[0].getBonusPoint())) * 12));
+		System.out.println(((emp[0].getSalary() + (int)((emp[0].getSalary() * emp[0].getBonusPoint()))) * 12));
 		
 		
 		// 3명 직원의 연봉 평균을 구하여 출력
