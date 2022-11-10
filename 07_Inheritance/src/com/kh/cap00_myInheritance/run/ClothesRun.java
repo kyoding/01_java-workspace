@@ -72,7 +72,7 @@ public class ClothesRun {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.println("★ 의류멀티샵 ★");
+			System.out.println("*** 의류멀티샵 ***");
 			System.out.println("[1] 품목명으로 검색합니다.");
 			System.out.println("[2] 브랜드명으로 검색합니다.");
 			System.out.println("[3] 상품명으로 검색합니다.");
@@ -92,20 +92,17 @@ public class ClothesRun {
 					System.out.println("===== " + category + " 목록 =====");	
 					for(int i = 0 ; i < t.length ; i++) {
 						System.out.println(t[i].information());
-						
 					}break;
 				} else if(category.equals("하의")) {
 					System.out.println("===== " + category + " 목록 =====");	
 					for(int i = 0 ; i < b.length ; i++) {
 						System.out.println(b[i].information());
-						break;
-					}
+					}break;
 				} else if(category.equals("신발")) {
 					System.out.println("===== " + category + " 목록 =====");	
 					for(int i = 0 ; i < s.length ; i++) {
 						System.out.println(s[i].information());
-						break;
-					}
+					}break;
 				} else {
 					System.out.println("잘못입력하셨습니다. 초기화면으로 돌아갑니다.");
 					break;
@@ -115,6 +112,7 @@ public class ClothesRun {
 				System.out.print("브랜드를 입력해주세요 : ");
 				String bBrand = sc.nextLine();
 				
+				// 예외처리 해보기 => 
 				for(int i = 0 ; i < t.length ; i++) {
 					if(t[i].getBrand().equals(bBrand)) {
 						System.out.println(t[i].information());
@@ -130,6 +128,7 @@ public class ClothesRun {
 						System.out.println(s[i].information());
 					}
 				}
+				break;
 				
 			case 3 :
 				System.out.print("상품명을 입력해주세요 : ");

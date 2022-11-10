@@ -13,7 +13,7 @@ public class Shoes extends Clothes {
 	// 생성자 - 전체
 	
 	public Shoes(String cName, int price, String meterial, String brand , String color, boolean reSell) {
-		super(cName, price, meterial, color, brand);
+		super(cName, price, meterial, brand, color);
 		this.reSell = reSell;
 	}
 

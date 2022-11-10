@@ -13,7 +13,7 @@ public class Top extends Clothes {
 	// 생성자 - 전체
 	
 	public Top(String cName, int price, String meterial, String brand , String color, String season ) {
-		super(cName, price, meterial, color, brand);
+		super(cName, price, meterial, brand, color);
 		this.season = season;
 	}
 

@@ -14,7 +14,7 @@ public class Bottom extends Clothes {
 	// 생성자 - 전체
 	
 	public Bottom(String cName, int price, String meterial, String brand, String color, int bottomLength) {
-		super(cName, price, meterial, color, brand);
+		super(cName, price, meterial, brand, color);
 		this.bottomLength = bottomLength;
 	}
 
