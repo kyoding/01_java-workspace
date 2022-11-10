@@ -3,14 +3,14 @@ package com.kh.chap01_poly.part02_electronic.model.vo;
 public class Electronic {
 	
 	private String brand;
-	private String nmae;
+	private String name;
 	private int price;
 	
 	public Electronic() {}
 
-	public Electronic(String brand, String nmae, int price) {
+	public Electronic(String brand, String name, int price) {
 		this.brand = brand;
-		this.nmae = nmae;
+		this.name = name;
 		this.price = price;
 	}
 
@@ -22,12 +22,12 @@ public class Electronic {
 		this.brand = brand;
 	}
 
-	public String getNmae() {
-		return nmae;
+	public String getname() {
+		return name;
 	}
 
-	public void setNmae(String nmae) {
-		this.nmae = nmae;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 	public int getPrice() {
@@ -40,7 +40,7 @@ public class Electronic {
 
 	@Override
 	public String toString() {
-		return "brand=" + brand + ", nmae=" + nmae + ", price=" + price;
+		return "brand=" + brand + ", name=" + name + ", price=" + price;
 	}
 	
 	
