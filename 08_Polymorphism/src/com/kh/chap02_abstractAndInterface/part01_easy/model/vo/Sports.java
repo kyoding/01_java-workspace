@@ -22,7 +22,7 @@ public abstract class Sports {
 	}
 	
 	// 추상메소드(미완선된 메소드) 만들기
-	// public void rule(); // 머리부만 있음... 몸통부가 없다고 에러가 남
+	// public void rule(); // 머리부만 있음... 몸통부가 없다고 에러가 남 => abstract
 	public abstract void rule();
 	
 	// 미완성된 메소드가 있다는 소리는 이 클래스도 아직 미완성이라는 이야기

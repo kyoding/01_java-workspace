@@ -21,7 +21,7 @@ public class Run {
 		CompExample ce = new CompExample();
 		
 		//ce.practice1();
-		ce.practice2();
+		//ce.practice2();
 		//ce.practice3();
 		//ce.practice4();
 		
