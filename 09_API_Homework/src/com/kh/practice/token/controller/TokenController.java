@@ -25,14 +25,18 @@ public class TokenController{ // start of class
 	public String firstCap(String input){ // start of firstCap(String input)
 		// 매개변수로 받아온 input의 첫 번째 글자만 대문자로 바꾼 문자열 반환
 		
-		input = input.toUpperCase().substring(0, 1) + input.substring(1);
-
-		return input;
+		//input = input.toUpperCase().substring(0, 1) + input.substring(1);
+		String upper = input.substring(0, 1).toUpperCase();
+		String lower = input.substring(1).toLowerCase();
+		
+		return upper + lower;
 		
 	} // end of firstCap(String input)
 
 	public int findChar(String input, char one){ // start of findChar(String input, char one)
 		// 매개변수의 문자가 문자열 안에 몇 개가 들어가 있는지 반환
+		
+		char[] arr = input.toCharArray();
 		
 		int count = 0;
 		
@@ -44,6 +48,26 @@ public class TokenController{ // start of class
 
         return count;
 		
-	} // end of findChar(String input, char one)
+	}
+	/*
+	public int findChar2(String input, char one) {
+		String sOne = one + "";
+		
+		char[] arr = input.toCharArray();
+		
+		int count = 0;
+		
+		for(int i=0; i<arr.length ; i++) {
+			char ch = arr[i];
+			String str = ch + "";
+			
+			if(str.contains(sOne)) {
+				count++;
+			}
+		}
+	}
+	*/
+	
+	// end of findChar(String input, char one)
 	
 } // end of class
