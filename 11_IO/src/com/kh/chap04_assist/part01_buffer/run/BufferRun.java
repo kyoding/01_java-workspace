@@ -9,7 +9,8 @@ public class BufferRun {
 		
 		BufferDao dao = new BufferDao();
 		
-		dao.fileSave();
+		//dao.fileSave();
+		dao.fileRead();
 	}
 
 }
