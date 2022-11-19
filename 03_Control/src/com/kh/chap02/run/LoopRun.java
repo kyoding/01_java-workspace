@@ -42,8 +42,8 @@ public class LoopRun {
 		C_Dowhile c = new C_Dowhile();
 		
 		//c.method1();
-		//c.method2();
-		c.method3();
+		c.method2();
+		//c.method3();
 		
 	}
 
