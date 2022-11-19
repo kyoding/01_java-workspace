@@ -34,7 +34,9 @@ public class LibraryRun {
 			bc.addBook(b);
 		}
 
-		while (true) {
+		boolean flag = true;
+
+		while (flag = true) {
 			System.out.println("===============================");
 			System.out.println("KH 우리반전용 도서관 관리 페이지입니다.");
 			System.out.println("1. 조회하기");
@@ -67,45 +69,46 @@ public class LibraryRun {
 				} else if (lookupNum == 3) {
 					System.out.println(bc.onlySearchMagazine());
 				} else if (lookupNum == 4) {
-					break;
+					flag = true;
 				} else {
 					System.out.println("잘못입력하셨습니다. 메인메뉴로 돌아갑니다.");
-					break;
 				}
+				break;
 
 			case 2: // 2.추가하기
 				System.out.print("bNo을 입력하세요 : ");
 				String bNo = sc.next();
-				
+
 				System.out.print("책 제목을 입력하세요 : ");
 				String title = sc.next();
-				
+
 				System.out.print("작가를 입력하세요 : ");
 				String author = sc.next();
-				
+
 				System.out.print("출판사를 입력하세요 : ");
 				String publisher = sc.next();
-				
+
 				System.out.print("가격을 입력하세요 : ");
 				int price = sc.nextInt();
-				
+
 				sc.nextLine();
-				
+
 				System.out.print("간단한 설명을 입력하세요 : ");
 				String description = sc.next();
-				
+
 				System.out.print("일반도서이면 true, 잡지이면 false를 입력하세요 : ");
 				boolean bkOrMaga = sc.nextBoolean();
-				
-				if(bkOrMaga == true) {
+
+				if (bkOrMaga == true) {
 					bc.addBook(new Book(bNo, title, author, publisher, price, description));
-				} else if(bkOrMaga == false) {
+				} else if (bkOrMaga == false) {
 					System.out.print("출간연도를 입력하세요 : ");
 					int year = sc.nextInt();
 					System.out.print("출간월를 입력하세요 : ");
 					int month = sc.nextInt();
 					bc.addBook(new Magazine(bNo, title, author, publisher, price, description, year, month));
 				}
+				break;
 
 			case 3: // 3.책찾기
 				System.out.println("===============================");
@@ -121,43 +124,43 @@ public class LibraryRun {
 				int searchNum = sc.nextInt();
 
 				if (searchNum == 1) {
-					System.out.println("bNo을 입력하세요 : ");
-					String find = sc.nextLine();
+					System.out.print("bNo을 입력하세요 : ");
+					String find = sc.next();
 					System.out.println(bc.searchBookBybNo(find));
 				} else if (searchNum == 2) {
-					System.out.println("책 제목을 입력하세요 : ");
-					String find = sc.nextLine();
+					System.out.print("책 제목을 입력하세요 : ");
+					String find = sc.next();
 					System.out.println(bc.searchBookByTitle(find));
 				} else if (searchNum == 3) {
-					System.out.println("출간연도를 입력하세요 : ");
+					System.out.print("출간연도를 입력하세요 : ");
 					int find = sc.nextInt();
 					System.out.println(bc.magazineOfThisYearInfo(find));
 				} else if (searchNum == 4) {
-					System.out.println("출판사를 입력하세요 : ");
-					String find = sc.nextLine();
+					System.out.print("출판사를 입력하세요 : ");
+					String find = sc.next();
 					System.out.println(bc.searchBookByPublisher(find));
 				} else if (searchNum == 5) {
-					System.out.println("가격을 입력하세요 : ");
+					System.out.print("가격을 입력하세요 : ");
 					int find = sc.nextInt();
 					System.out.println(bc.searchBookByPrice(find));
 				} else if (searchNum == 6) {
-					break;
+					flag = true;
 				} else {
-					System.out.println("잘못입력하셨습니다. 메인메뉴로 돌아갑니다.");
-					break;
+					System.out.println("잘못입력하셨습니다.");
 				}
-				sc.nextLine();
+				break;
 
-			case 4: // 4. 전체책 가격 합계 및 평균 조회
-
+			case 4: // 4. 전체책 가격 합계 및 평균 조회s
+				System.out.println("전체 책 가격 합계 : " + bc.getTotalPrice() + "원");
+				System.out.println("전체 책 가격 평균 : " + bc.getAvgPrice() + "원");
+				break;
 			case 5: // 5. 프로그램 종료
 				System.out.println("프로그램을 종료합니다.");
 				return;
-
+			default:
+				System.out.println("잘못입력하셨습니다. 다시입력해주세요.");
+				break;
 			}
-
 		}
-
 	}
-
 }

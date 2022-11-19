@@ -71,18 +71,11 @@ public class BookController implements BookManager  {
 		ArrayList<Book> bookList = new ArrayList<Book>();
 		for(Book b : bList) {
 			//instance of
-			
-			if(b instanceof Book) {
-				bookList.add(b);
-			}
-			
-			/*
 			if(b instanceof Magazine) {
 				continue; // 조건문 탈출함수
 			}else {
 				bookList.add(b);
 			}
-			*/
 		}
 		
 		return bookList;
