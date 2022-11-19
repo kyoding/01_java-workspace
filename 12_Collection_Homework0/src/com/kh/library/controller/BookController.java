@@ -11,7 +11,6 @@ public class BookController implements BookManager  {
 	private ArrayList<Book> bList = new ArrayList<Book>();
 	
 	
-	
 
 	@Override
 	public void addBook(Book nBook) {
@@ -37,35 +36,68 @@ public class BookController implements BookManager  {
 
 	@Override
 	public Book searchBookBybNo(String bNo) {
-		//return for(Book b : bList) {
-			
+		Book search = new Book();
+		for (Book b : bList) {
+			if(b.getbNo().equals(bNo)) {
+				search = b;
+			}
 		}
-		
+		return search;
 	}
 
 	@Override
 	public ArrayList<Book> searchBookByTitle(String title) {
-		return null;
+		ArrayList<Book> titleSearch = new ArrayList<Book>();
+		for(Book b : bList) {
+			if(b.getTitle().contains(title)) {
+				titleSearch.add(b);
+			}
+		}
+		return titleSearch;
 	}
 
 	@Override
 	public ArrayList<Book> onlySearchBook() {
-		return null;
+		ArrayList<Book> onlybSearch = new ArrayList<Book>();
+		for(Book b : bList) {
+			if(b instanceof Book) {
+				onlybSearch.add(b);
+			}
+		}
+		return onlybSearch;
 	}
 
 	@Override
 	public ArrayList<Book> onlySearchMagazine() {
-		return null;
+		ArrayList<Book> onlymSearch = new ArrayList<Book>();
+		for(Book b : bList) {
+			if(b instanceof Magazine) {
+				onlymSearch.add(b);
+			}
+		}
+		return onlymSearch;
 	}
 
 	@Override
 	public ArrayList<Book> magazineOfThisYearInfo(int year) {
-		return null;
+		ArrayList<Book> magazineSearch = new ArrayList<Book>();
+		for(Book b : bList) {
+			if(((Magazine)b).getYear() == year) {
+				magazineSearch.add(b);
+			}
+		}
+		return magazineSearch;
 	}
 
 	@Override
 	public ArrayList<Book> searchBookByPublisher(String publisher) {
-		return null;
+		ArrayList<Book> pubSearch = new ArrayList<Book>();
+		for(Book b : bList) {
+			if(b.getPublisher() == publisher) {
+				pubSearch.add(b);
+			}
+		}
+		return pubSearch;
 	}
 
 	@Override

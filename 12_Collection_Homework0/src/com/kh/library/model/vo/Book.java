@@ -11,6 +11,8 @@ public class Book {
 	
 	// 단축키로 생성해보기
 	
+	public Book() {}
+	
 	public Book(String bNo, String title, String author, String publisher, int price, String description) {
 		super();
 		this.bNo = bNo;
