@@ -36,7 +36,7 @@ public class Magazine extends Book {
 
 	@Override
 	public String toString() {
-		return super.toString() +"year=" + year + ", month=" + month + "]";
+		return super.toString() +"출간연도 : " + year + ", 출간월 : " + month ;
 	}
 	
 	

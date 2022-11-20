@@ -1,5 +1,8 @@
 package com.kh.library.controller;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -131,5 +134,11 @@ public class BookController implements BookManager {
 		avg = total / bList.size();
 
 		return avg;
+	}
+	
+	public void fileSave() {
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter("bookList.txt"))) {
+		}catch(IOException e) {
+		}
 	}
 }

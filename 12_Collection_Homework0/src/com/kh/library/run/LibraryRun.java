@@ -43,7 +43,8 @@ public class LibraryRun {
 			System.out.println("2. 추가하기");
 			System.out.println("3. 책 찾기");
 			System.out.println("4. 전체책 가격 합계 및 평균 조회");
-			System.out.println("5. 프로그램 종료");
+			System.out.println("5. 책 정보를 파일로 저장");
+			System.out.println("6. 프로그램 종료");
 			System.out.println("===============================");
 
 			System.out.print("메뉴번호를 입력해주세요 : ");
@@ -154,7 +155,9 @@ public class LibraryRun {
 				System.out.println("전체 책 가격 합계 : " + bc.getTotalPrice() + "원");
 				System.out.println("전체 책 가격 평균 : " + bc.getAvgPrice() + "원");
 				break;
-			case 5: // 5. 프로그램 종료
+			case 5: 
+				bc.fileSave();
+			case 6: // 6. 프로그램 종료
 				System.out.println("프로그램을 종료합니다.");
 				return;
 			default:
