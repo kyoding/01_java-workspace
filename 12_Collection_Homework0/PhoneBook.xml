@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>전화번호부[xml File]</comment>
+<entry key="정우영">010-2315-2588</entry>
+<entry key="김민재">010-9853-5747</entry>
+<entry key="이강인">010-8492-6512</entry>
+<entry key="김승규">010-6739-8426</entry>
+<entry key="손흥민">010-5125-6219</entry>
+<entry key="황희찬">010-1215-8752</entry>
+<entry key="황인범">010-8791-2156</entry>
+<entry key="황의조">010-2156-7895</entry>
+<entry key="이재성">010-6568-5125</entry>
+<entry key="김영권">010-8968-4792</entry>
+</properties>
