@@ -136,6 +136,11 @@ public class BookController implements BookManager {
 		return avg;
 	}
 	
+	public void remove() {
+		ArrayList<Book> remove = new ArrayList<Book>();
+	}
+	
+	
 	public void fileSave() {
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter("bookList.txt"))) {
 		}catch(IOException e) {
