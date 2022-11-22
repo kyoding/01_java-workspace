@@ -64,15 +64,27 @@ public class PbookRun {
 					
 					if(pNum == null) {
 						System.out.println(name + "은(는) 전화번호부에 없습니다.");
+						System.out.print("추가하시겠습니까? (Y or N) : ");
+						char add = sc.next().charAt(0);
+						if(add == 'Y' || add == 'y') {
+							
+							System.out.print("추가하실 전화번호(-포함) : ");
+							String aNum = sc.next();
+							
+							pb.put(name, aNum);
+							
+							System.out.println(name + "님의 전화번호 [" + aNum + "]가 추가되었습니다.");
+						} else
+							break;
 					} else {
-						System.out.println(pNum);
+						System.out.println(name + "님의 전화번호는 " + pNum + "입니다.");
 					}
 					
 					break;
 				case 2: // 2. 전화번호 추가하기
 					System.out.print("추가하실 이름 : ");
 					String aName = sc.next();
-					System.out.print("추가하실 전화번호 : ");
+					System.out.print("추가하실 전화번호(-포함) : ");
 					String aNum = sc.next();
 					
 					pb.put(aName, aNum);
@@ -140,7 +152,6 @@ public class PbookRun {
 		}
 			
 		}
-
 
 	}
 }
