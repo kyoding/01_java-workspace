@@ -16,6 +16,9 @@ public class C_StringTokenizerTest {
 		String[] arr = str.split(",");
 		System.out.println("arr배열의 길이 : " + arr.length);
 		
+		System.out.println("자바 : " + arr[0]);
+		
+		
 		/*
 		// 단순 for문
 		for(int i = 0 ; i<arr.length ; i++) {

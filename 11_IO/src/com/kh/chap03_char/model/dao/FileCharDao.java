@@ -71,10 +71,12 @@ public class FileCharDao {
 			
 			int value = 0;
 			
+			
 			while((value=fr.read()) != -1) {
 				//System.out.println(value);
 				System.out.print((char)value);
 			}
+			
 			
 			
 		} catch (FileNotFoundException e) {
